@@ -5,7 +5,7 @@ image = "/v1527779588/snipcart-hugo-demo/axe.jpg"
 price = 30
 shortDescription = "Swing with purpose."
 title = "Axe"
-rel = "9ddbf90062433"
+rel = "9ddbf90062730"
 
 +++
 ## Built for Hackers
