@@ -9,7 +9,7 @@
     <meta name="author" content="{{ $.Param "author" }}">
     <meta name="description" content="{{ $.Param "description" }}">
     <link rel="stylesheet" href="{{ "css/styles.min.css" | relURL }}"/>
-    <!-- snipcart assets -->
+    <!-- snipcart assets КНОПКА-->
     {{- if or (and (eq (getenv "HUGO_ENV") "development") (not .Site.Params.snipcart_test_api_key)) (and (ne (getenv "HUGO_ENV") "development") (not .Site.Params.snipcart_live_api_key)) -}}
     <script>
       console.warn("No Snipcart API key found. Please set up your API key(s) in config.toml.");
@@ -24,5 +24,26 @@
   {{- end -}}
 "></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- ПРОДОЛЖАЮ ХЭД! для изинетшопкнопки -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-9ddbf900.js"></script>
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-9ddbf900.css" rel="stylesheet">
+
+<!-- код цвета кнопки -->
+<style>
+.btn-ens-style{ background-color:#4874ed; }
+.btn-ens-style{ border-color:#817582; }
+.btn-ens-style{ color:#ffffff; }
+.btn-ens-style{ font-size:16px; }
+.btn-ens-style{ border-radius:14px; }
+.btn-ens-style{ padding-left:18px; padding-right:18px; }
+.btn-ens-style{ padding-top:0px; padding-bottom:0px; }
+.btn-ens-style{ border-width:5px; }
+.btn-ens-style:hover{ background-color:#27e4a7; }
+.btn-ens-style:hover{ border-color:#5eb0cf; }
+.btn-ens-style:hover{ color:#f7fcf8; }
+</style>
+
   </head>
   <body>
